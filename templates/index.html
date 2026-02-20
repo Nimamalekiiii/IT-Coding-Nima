@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="container">
+            <h1>Planlegg dine dager her ✨</h1>
+            <p class="subtitle">Struktur gir frihet. Start nå.</p>
+
+            <div class="task-box">
+                <input type="text" id="taskInput" placeholder="Skriv en oppgave...">
+                <button onclick="addTask()">Legg til</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

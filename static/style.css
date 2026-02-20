@@ -1,0 +1,107 @@
+/* RESET */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("https://t3.ftcdn.net/jpg/07/35/44/76/360_F_735447660_Mb1mTmfff8EhrRuornYjGkE9JlGUk4lP.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* mørk overlay */
+.overlay {
+    background: rgba(0, 0, 0, 0.65);
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+/* sentrer container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+/* overskrift */
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin-bottom: 40px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* input og knapp */
+.task-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 12px;
+    width: 65%;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #00ff88, #00cfff);
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+/* liste */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+li span {
+    flex: 1;
+    text-align: left;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+/* liten animasjon */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
